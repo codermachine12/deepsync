@@ -43,12 +43,10 @@ def process_video(video_path, output_audio_path,output_translated_audio_path):
     # Convert translated text to speech
     text_to_speech(translated_text, output_translated_audio_path)
     print(f"Translated speech saved as {output_translated_audio_path}")
+
 # Example usage
-inp=input("Enter male or female")
-video_path = r"C:\Users\rohan\Downloads\WhatsApp Video 2024-08-29 at 11.05.51 AM.mp4"
+
+video_path = r"C:\Users\rohan\Pictures\Camera Roll\WIN_20241103_11_58_58_Pro.mp4"
 output_audio_path = r'C:\Users\rohan\Wav2Lip\translation\demo.wav'
 output_translated_audio_path = r'C:\Users\rohan\Wav2Lip\translation\demotrans.mp3'
-if inp=="female":
-    process_video(video_path, output_audio_path,output_translated_audio_path)
-elif inp=="male":
-    process_videom()
+process_video(video_path, output_audio_path,output_translated_audio_path)
